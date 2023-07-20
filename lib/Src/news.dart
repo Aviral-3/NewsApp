@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:inews/Models/article.dart';
+import 'package:inewsApp/Models/article.dart';
 import 'package:http/http.dart' as http;
 
 class News {

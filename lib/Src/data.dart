@@ -1,4 +1,4 @@
-import 'package:inews/Models/category.dart';
+import 'package:inewsApp/Models/category.dart';
 
 List<CategoryModel> getCategories() {
   List<CategoryModel> categories = List<CategoryModel>();

@@ -23,14 +23,14 @@ class _ArticleNewsState extends State<ArticleNews> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'India',
+              'News',
               style: TextStyle(
                   color: Color(0xff128807),
                   fontWeight: FontWeight.w800,
                   letterSpacing: 1.2),
             ),
             Text(
-              'News',
+              ' By Aviral',
               style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w800,

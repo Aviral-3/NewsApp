@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:inews/Models/article.dart';
-import 'package:inews/Pages/article_page.dart';
-import 'package:inews/Src/news.dart';
+import 'package:inewsApp/Models/article.dart';
+import 'package:inewsApp/Pages/article_page.dart';
+import 'package:inewsApp/Src/news.dart';
 
 class CategoryNews extends StatefulWidget {
   final String category;
@@ -38,14 +38,14 @@ class _CategoryNewsState extends State<CategoryNews> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'India',
+              'News',
               style: TextStyle(
                   color: Color(0xff128807),
                   fontWeight: FontWeight.w800,
                   letterSpacing: 1.2),
             ),
             Text(
-              'News',
+              'By Aviral',
               style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w800,
@@ -138,9 +138,12 @@ class NewsTitles extends StatelessWidget {
             height: 4,
           ),
           Material(
-            child: RaisedButton.icon(
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(12)),
+            child: ElevatedButton.icon(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
               onPressed: () {
                 Navigator.push(
                   context,

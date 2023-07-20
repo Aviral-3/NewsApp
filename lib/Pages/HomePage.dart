@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:inews/Models/category.dart';
+import 'package:inewsApp/Models/category.dart';
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:inews/Pages/Splash_Screen.dart';
-import 'package:inews/Pages/article_page.dart';
-import 'package:inews/Pages/category_page.dart';
-import 'package:inews/Src/news.dart';
-import 'package:inews/Src/data.dart';
-import 'package:inews/Models/article.dart';
+import 'package:inewsApp/Pages/Splash_Screen.dart';
+import 'package:inewsApp/Pages/article_page.dart';
+import 'package:inewsApp/Pages/category_page.dart';
+import 'package:inewsApp/Src/news.dart';
+import 'package:inewsApp/Src/data.dart';
+import 'package:inewsApp/Models/article.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -44,14 +44,14 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'India',
+              'News',
               style: TextStyle(
                   color: Color(0xff128807),
                   fontWeight: FontWeight.w800,
                   letterSpacing: 1.2),
             ),
             Text(
-              'News',
+              'By Aviral',
               style: TextStyle(
                   color: Colors.black,
                   fontWeight: FontWeight.w800,
@@ -226,9 +226,12 @@ class NewsTitles extends StatelessWidget {
             height: 4,
           ),
           Material(
-            child: RaisedButton.icon(
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12)),
+            child: ElevatedButton.icon(
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
                 onPressed: () {
                   Navigator.push(
                     context,

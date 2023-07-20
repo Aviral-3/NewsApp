@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:inews/Pages/Splash_Screen.dart';
+import 'package:inewsApp/Pages/Splash_Screen.dart';
 
 void main() => runApp(Myapp());
 

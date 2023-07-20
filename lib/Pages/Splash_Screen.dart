@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:inews/Pages/HomePage.dart';
+import 'package:inewsApp/Pages/HomePage.dart';
 
 class SplashPage extends StatefulWidget {
   @override
@@ -34,7 +34,7 @@ class _SplashPageState extends State<SplashPage> {
                   ],
                 ),
                 // color: ,
-                image: DecorationImage(image: AssetImage('images/splash.png'))),
+                image: DecorationImage(image: AssetImage('images/splash12.png'))),
           ),
           Container(
             width: MediaQuery.of(context).size.width,
